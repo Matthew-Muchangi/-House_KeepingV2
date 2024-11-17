@@ -41,7 +41,98 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
-		
+		<style>
+
+.events {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.events h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+}
+
+.event-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.event {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.event-date {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #0047ab;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.event-details {
+  padding: 24px;
+}
+
+.event-details h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.event-details .location {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #666;
+}
+
+.event-details .learn-more {
+  display: inline-block;
+  background-color: #0047ab;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.event-details .learn-more:hover {
+  background-color: #002d70;
+}
+			</style>
     </head>
     <body>
 	
@@ -146,7 +237,9 @@
 						<div class="choose-right">
 							<div class="video-image">
 								
-								<iframe src="https://drive.google.com/file/d/1_JmHWmMTaiNZn96zEMzr9cIgxWWTZdMf/preview" width="640" height="480" allow="autoplay"></iframe>
+								<video width="600" height="300" controls>
+									<source src="vids/vid 1.mp4" type="video/mp4">
+								  </video>
 														  
 							</div>
 						</div>
@@ -231,11 +324,91 @@
 					</div>
 				</div>
 			</div>
-			<p style="text-align: center; font-weight: bold; font-size: medium;">If you would like to see upcoming housekeeping events click the button to see the calendar.</p>
-			<br></br>
-			<a  class="btn-hover-bg btn btn-primary text-white py-2 px-4" style= "position: relative;left: 550px;"style="background-color:blue;" href="calender.html">Events Calendar</a>
-			
+			<section class="blog section" id="blog">
+				<div class="container" style="position: relative;bottom:200px;">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="section-title">
+								
+								
+						
+							</div>
+						</div>
+					</div>
+					<section class="events">
+						<h2>Past & Upcoming Events</h2>
+						<div class="event-container">
+						  <div class="event">
+							<div class="event-date">
+							  <span class="date">04</span>
+							  <span class="time">NOV</span>
+							  <span class="time">2024</span>
+							</div>
+							<div class="event-image">
+							  <img src="img/pic12.png" alt="Community Cleanups">
+							</div>
+							<div class="event-details">
+							  <h3>COMMUNITY CLEANUPS</h3>
+							  <p class="location">04-11-2024 @ 9:00 AM</p>
+							  <p class="location">Strathmore University</p>
+							  <a href="https://forms.gle/xFdQaHWnEVkjRkXF8" target="_blank" class="learn-more">Sign up</a>
+							</div>
+						  </div>
+						  <div class="event">
+							<div class="event-date">
+							  <span class="date">11</span>
+							  <span class="time">NOV</span>
+							  <span class="time">2024</span>
+							</div>
+							<div class="event-image">
+							  <img src="img/pic 19.jpg" alt="Workshops">
+							</div>
+							<div class="event-details">
+							  <h3>WORKSHOPS</h3>
+							  <p class="location">11-11-2024 @ 9:00 AM</p>
+							  <p class="location">Strathmore University</p>
+							  <a href="https://forms.gle/BCEu2mWEeC68YAn5A" target="_blank" class="learn-more">Sign up</a>
+							</div>
+						  </div>
+						  <div class="event">
+							<div class="event-date">
+							  <span class="date">01</span>
+							  <span class="time">JULY</span>
+							  <span class="time">2025</span>
+							</div>
+							<div class="event-image">
+							  <img src="img/pic2.jpg" alt="Orientation">
+							</div>
+							<div class="event-details">
+							  <h3>ORIENTATION</h3>
+							  <p class="location">07-09-2025 @ 9:00 AM</p>
+							  <p class="location">Strathmore University</p>
+							  <a href="https://forms.gle/81LCFkfhhjdRef4M7" target="_blank" class="learn-more">Sign up</a>
+							</div>
+						  </div>
+						</div>
+						<div class="event">
+							<div class="event-date">
+							  <span class="date">08</span>
+							  <span class="time">SEPT</span>
+							  <span class="time">2025</span>
+							</div>
+							<div class="event-image">
+							  <img src="img/pic 21.jpg" alt="Workshops">
+							</div>
+							<div class="event-details">
+							  <h3>HOUSEKEEPING WEEK</h3>
+							  <p class="location">09-09-2025 @ 9:00 AM</p>
+							  <p class="location">Strathmore University</p>
+							  <a href="https://forms.gle/1gJu8xV7Fou3QRD97" target="_blank" class="learn-more">Sign up</a>
+							</div>
+						  </div>
+						
+					  </section>
 
+				
+
+							
 		</section>
 		<!-- End Blog Area -->
 
